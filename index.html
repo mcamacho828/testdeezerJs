@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Deezer - Miguel</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+	<div id="dz-root"></div>
+	<div class="row mrg">
+		<h3 class="center">Selecciona tu Lista de reproducción</h3>
+		<div class="col-md-2 col-sm-4 col-xs-6 mg">
+			<input class="btn1 btn-dtx"  type="button" onclick="DZ.player.playAlbum(11192186); return false;" value="AVICII "/>			
+		</div>
+		<div class="col-md-2 col-sm-4 col-xs-6 mg">
+			<input class="btn2 btn-dtx" type="button" onclick="DZ.player.playAlbum(212377); return false;" value="METALLICA"/>
+		</div>
+		<div class="col-md-2 col-sm-4 col-xs-6 mg">
+			<input class="btn3 btn-dtx" type="button" onclick="DZ.player.playAlbum(15478674); return false;" value="ED-SHERMAN"/>
+		</div>
+		<div class="col-md-2 col-sm-4 col-xs-6 mg">
+			<input class="btn4 btn-dtx" type="button" onclick="DZ.player.playAlbum(11697740); return false;" value="GUETTA"/>
+		</div>
+		<div class="col-md-2 col-sm-4 col-xs-6 mg">
+			<input class="btn5 btn-dtx" type="button" onclick="DZ.player.playAlbum(8679369); return false;" value="COLDPLAY"/>
+		</div>
+		<div class="col-md-2 col-sm-4 col-xs-6 mg">
+			<input class="btn6 btn-dtx" type="button" onclick="DZ.player.playAlbum(1266680); return false;" value="TIESTO"/>
+		</div>
+	</div>
+	<div class="bg-container">
+		<h3 class="center">player music</h3>
+		<div id="controls" class="mg center">
+		  <input class="player-button" type="button" onclick="DZ.player.prev();" value="Prev"/> 
+		  <!-- Play -->
+		  <input class="player-button" type="button" onclick="DZ.player.play();" value="Play"/>
+		  <!-- Pause -->
+		   <input class="player-button" type="button" onclick="DZ.player.pause();" value="Pause"/> 
+		  <!-- Next -->
+		  <input class="player-button" type="button" onclick="DZ.player.next();" value="Next"/>
+			<!-- Albums -->
+		</div>
+		<div id="player" style="width:100%;" align="center"></div>
+	</div>
+
+
+
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
+<script>
+	DZ.init({
+  appId: '262322',
+  channelUrl: 'http://localhost:8080/deezer/index.html',
+		player : {
+			container : 'player',
+			cover : true,
+			playlist : true,
+			width : 650,
+			height : 300,
+			onload : function () {} 
+		}
+});
+</script>
+</body>
+</html>

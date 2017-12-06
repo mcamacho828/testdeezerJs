@@ -1,0 +1,61 @@
+body{
+	background-color: #E79E6D;
+}
+
+.btn1{
+	background-image: url('../img/avicii.jpg');	
+}
+.btn2{
+	background-image: url('../img/metallica.jpg');	
+}
+.btn3{
+	background-image: url('../img/luxe.jpg');	
+}
+.btn4{
+	background-image: url('../img/guetta.jpg');	
+}
+.btn5{
+	background-image: url('../img/coldplay.jpg');	
+}
+.btn6{
+	background-image: url('../img/tiesto.jpg');	
+}
+
+.btn-dtx{
+  background-repeat:no-repeat;
+  height:150px;
+  width:100%;
+  background-position:center;
+  background-size: cover;
+}
+
+.mg{
+	margin: 15px 0px;
+}
+
+.center{
+	text-align: center;
+	text-transform: uppercase;
+	margin: 15px;
+}
+
+.mrg{
+	margin: 50px 0px;
+}
+
+.bg-container{
+	background-color: #3D4855;
+	padding: 5%;
+}
+
+#dzplayer{
+	width: 90% !important;
+}
+
+input[type="button"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
